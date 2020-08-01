@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Saldo de folga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Cálculo de folga</h1>
+        <div class="form">
+            <label for="initialDate">Início da viagem</label>
+            <input type="datetime-local" name="initialDate" onblur="getInitialDate(event)">
+            <label for="finalDate">Fim da viagem</label>
+            <input type="datetime-local" name="finalDate" onblur="getFinalDate(event)">
+        </div>
+        <div id="root"></div>
+    </div>
+
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
