@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    text-align: center;
+    background-color: #222;
+    color: #fafafa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form :nth-child(n) {
+    margin: 5px;
+}
+
+input {
+    padding: 10px;
+    font-size: 12pt;
+}
